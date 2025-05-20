@@ -1,0 +1,50 @@
+nav {
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #333333;
+}
+
+.navMenu {
+  align-items: center;
+}
+
+.nav1 p {
+  color: white;
+}
+
+main {
+  padding: var(--default-padding);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: var(--h1-size);
+  width: 100%;
+  padding-top: var(--default-padding);
+}
+
+.heroP {
+  font-size: var(--p-size);
+  text-transform: capitalize;
+}
+
+span {
+  font-size: var(--p-size);
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+button {
+  color: black;
+}
+
+footer {
+  padding: var(--default-padding);
+}
