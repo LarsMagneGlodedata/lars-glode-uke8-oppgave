@@ -18,7 +18,7 @@ nav {
 
 
 .burger {
-  background-color: #333333;
+  background-color: var(--background-color);
   cursor: pointer;
 }
 
@@ -27,7 +27,7 @@ nav {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: rgb(146, 146, 146);
+  background-color: var(--font-color);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -59,7 +59,7 @@ nav {
   display: block;
   height: 5vh;
   align-content: center;
-  color: white;
+  color: var(--font-color);
 }
 
 .overlay {
@@ -74,4 +74,53 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: 0.5s ease-in-out;
+}
+
+
+/* menu.html */
+.pizzaMeny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5vh;
+  height: auto;
+}
+
+.h1Meny {
+  width: fit-content;
+}
+
+#pizzaCardContainer {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2em;
+  width: 80%;
+}
+
+.pizzaCard {
+  border: 1px solid black; /*placeholder*/
+  padding: var(--default-padding);
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  column-gap: 0.5em;
+}
+
+.pizzaImg {
+  width: 100%;
+  grid-row: 1 / span 3;
+}
+
+.pizzaName {
+  text-transform: uppercase;
+}
+
+.pizzaDiscription {
+
+}
+
+.pizzaPrice {
+font-weight: bold;
 }

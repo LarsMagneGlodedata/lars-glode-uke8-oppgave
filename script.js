@@ -6,22 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
   const overlay = document.querySelector('.overlay');
   let mainHeight = document.querySelector('main').offsetHeight;
+  let navHeight = document.querySelector('.navMenu a').offsetHeight;
+
 
   // function for å åpne nav
   function openNav() {
-    navMenu.style.height = '193px';
-    overlay.style.height = `${mainHeight + 193}px`;
+    navMenu.style.height = `${navHeight * 5}px`;
+    overlay.style.height = `${mainHeight + navHeight * 5}px`;
     burger.classList.toggle('change');
-    if (navMenu) navMenu.style.height === '193px';
     isNavOpen = true;
   }
 
   //  function for å lukke nav
   function closeNav() {
-    navMenu.style.height = '0';
-    overlay.style.height = '0';
+    navMenu.style.height = '';
+    overlay.style.height = '';
     burger.classList.toggle('change');
-    if (navMenu) navMenu.style.height === '0';
     isNavOpen = false;
   }
 
@@ -120,3 +120,56 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   startAnimation(0);
 });
+
+
+// menu.html
+
+/*
+const pizzaCard = document.createElement('div')
+const pizzaImg = document.createElement('img')
+pizzaImg.src = ""
+pizzaImg.alt = "Bilde av pizza"
+const pizzaName = document.createElement('h3')
+pizzaName.innerHTML = "Navn"
+const pizzaDiscription = document.createElement('p')
+pizzaDiscription.innerHTML = "Beskrivelse"
+const pizzaPrice = document.createElement('p')
+pizzaPrice.innerHTML = "pris"
+
+pizzaCard.appendChild(pizzaImg)
+pizzaCard.appendChild(pizzaName)
+pizzaCard.appendChild(pizzaDiscription)
+pizzaCard.appendChild(pizzaPrice)
+pizzaCardContainer.appendChild(pizzaCard)
+pizzaCardContainer.appendChild(pizzaCard.cloneNode(true))
+*/
+
+const pizzaCardContainer = document.querySelector('#pizzaCardContainer')
+
+for (let i = 1; i <= 8; i++) {
+  const pizzaCard = document.createElement('div')
+  pizzaCard.classList.add('pizzaCard')
+
+  const pizzaImg = document.createElement('img')
+  pizzaImg.classList.add('pizzaImg')
+  pizzaImg.src = "pizza.webp"
+  pizzaImg.alt = "Bilde av pizza"
+  
+  const pizzaName = document.createElement('h3')
+  pizzaName.classList.add('pizzaName')
+  pizzaName.innerHTML = "Navn"
+  
+  const pizzaDiscription = document.createElement('p')
+  pizzaDiscription.classList.add('pizzaDiscription')
+  pizzaDiscription.innerHTML = "Beskrivelse"
+  
+  const pizzaPrice = document.createElement('p')
+  pizzaPrice.classList.add('pizzaPrice')
+  pizzaPrice.innerHTML = "pris"
+  
+  pizzaCard.appendChild(pizzaImg)
+  pizzaCard.appendChild(pizzaName)
+  pizzaCard.appendChild(pizzaDiscription)
+  pizzaCard.appendChild(pizzaPrice)
+  pizzaCardContainer.appendChild(pizzaCard)
+}

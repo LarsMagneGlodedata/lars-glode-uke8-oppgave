@@ -1,0 +1,70 @@
+.menu {
+    display: none;
+  }
+  
+  .navMenu {
+    display: flex;
+    width: 60%;
+    padding-left: 5vw;
+  }
+  
+  .navMenu :nth-child(5) {
+    position: absolute;
+    right: 5vw;
+    width: 10%;
+  }
+  
+  .navMenu a {
+    display: flex;
+    text-decoration: none;
+    height: 5vh;
+    align-items: center;
+    color: var(--font-color);
+    width: 20%;
+    justify-content: center;
+  }
+
+
+  /* menu.html */
+  .pizzaMeny {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5vh;
+    height: auto;
+  }
+  
+  .h1Meny {
+    width: fit-content;
+  }
+  
+  #pizzaCardContainer {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    width: 80%;
+  }
+  
+  .pizzaCard {
+    border: 1px solid black; /*placeholder*/
+    padding: var(--default-padding);
+  }
+  
+  .pizzaImg {
+    width: 100%;
+  }
+  
+  .pizzaName {
+    text-transform: uppercase;
+  }
+  
+  .pizzaDiscription {
+  
+  }
+  
+  .pizzaPrice {
+  font-weight: bold;
+  }

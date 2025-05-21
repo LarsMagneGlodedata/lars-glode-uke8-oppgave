@@ -1,0 +1,81 @@
+header {
+  position: sticky;
+  z-index: 1;
+  transition: top 0.3s ease-in-out;
+  top: 0;
+}
+
+.menu {
+  display: none;
+}
+
+.navMenu {
+  display: flex;
+  width: 50%;
+  padding: 0 5vw;
+}
+
+.navMenu :nth-child(5) {
+  position: absolute;
+  right: 5vw;
+  width: 10%;
+}
+
+.navMenu a {
+  display: flex;
+  text-decoration: none;
+  height: 5vh;
+  align-items: center;
+  color: var(--font-color);
+  width: 25%;
+  justify-content: center;
+}
+
+.navMenu a:hover {
+  background-color: var(--secondary-color);
+}
+
+
+/* menu.html */
+.pizzaMeny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5vh;
+  height: auto;
+}
+
+.h1Meny {
+  width: fit-content;
+}
+
+#pizzaCardContainer {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  width: 80%;
+}
+
+.pizzaCard {
+  border: 1px solid black; /*placeholder*/
+  padding: var(--default-padding);
+}
+
+.pizzaImg {
+  width: 100%;
+}
+
+.pizzaName {
+  text-transform: uppercase;
+}
+
+.pizzaDiscription {
+
+}
+
+.pizzaPrice {
+font-weight: bold;
+}

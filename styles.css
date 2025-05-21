@@ -1,8 +1,9 @@
 nav {
-  padding: 0.5rem;
+  padding: var(--default-padding);
   gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #333333;
+  border-bottom: solid 1px var(--background-color);
+  background-color: var(--background-color);
+
 }
 
 .navMenu {
@@ -10,7 +11,7 @@ nav {
 }
 
 .nav1 p {
-  color: white;
+  color: var(--font-color);
 }
 
 main {
@@ -22,11 +23,13 @@ h1 {
   font-size: var(--h1-size);
   width: 100%;
   padding-top: var(--default-padding);
+  color: var(--font-color);
 }
 
 .heroP {
   font-size: var(--p-size);
   text-transform: capitalize;
+  color: var(--font-color);
 }
 
 span {
@@ -41,9 +44,6 @@ span {
   }
 }
 
-button {
-  color: black;
-}
 
 footer {
   padding: var(--default-padding);
