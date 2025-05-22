@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
   const overlay = document.querySelector('.overlay');
   let mainHeight = document.querySelector('main').offsetHeight;
-  let navHeight = document.querySelector('.navMenu a').offsetHeight;
+  let navAHeight = document.querySelector('.navMenu a').offsetHeight;
 
 
   // function for å åpne nav
   function openNav() {
-    navMenu.style.height = `${navHeight * 5}px`;
-    overlay.style.height = `${mainHeight + navHeight * 5}px`;
+    navMenu.style.height = `${navAHeight * 5}px`;
+    overlay.style.height = `${mainHeight + navAHeight * 5}px`;
     burger.classList.toggle('change');
     isNavOpen = true;
   }
@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 });
 
-//
+// SKRIVEMASKIN
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  let dataText = ['Hei, dette er en test!', 'Testen er fullført...!'];
+  let dataText = ['Fersk', 'Deilig', 'Pizza...!'];
   let hero = document.querySelector('.heroP');
 
   function typewriter(text, i, callback) {
@@ -112,9 +112,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         });
       });
     } else {
-      setTimeout(function () {
-        startAnimation(0);
-      }, 3000);
+      startAnimation(0)
     }
   }
 

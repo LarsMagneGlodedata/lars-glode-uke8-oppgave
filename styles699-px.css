@@ -76,6 +76,89 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: auto;
+  justify-items: center;
+  row-gap: 5vh;
+}
+
+.heroImg {
+  width: 50%;
+  grid-row: 4;
+  mask-image: radial-gradient(ellipse at center, white 60%, transparent 68%);
+}
+
+
+h1 {
+  flex-direction: column;
+  font-weight: bold;
+  font-size: var(--h1-size-mobile);
+  color: var(--font-color);
+  grid-row: 2;
+  width: fit-content;
+  padding: var(--default-padding);
+  text-transform: uppercase;
+}
+
+#h1i {
+  color: black;
+}
+
+.heroP {
+  font-size: var(--p-size);
+  text-transform: capitalize;
+  color: var(--font-color);
+  grid-row: 1;
+  height: 10vh;
+}
+
+#heroA {
+  grid-row: 3;
+  background-color: var(--primary-color);
+  color: white;
+  width: 80%;
+  font-size: var(--h1-size-mobile);
+  flex-direction: column;
+  text-decoration: none;
+  align-items: start;
+  padding: 0.5em;
+  border-radius: var(--default-border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+#heroI {
+  font-size: var(--p-size);
+}
+
+#arrowImg {
+  position: absolute;
+  width: 10%;
+  right: 20px;
+  bottom: 30px;
+}
+
+#footerNav {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footerNav a {
+  display: flex;
+  justify-content: center;
+}
+
+#footerNotes {
+  flex-direction: column;
+}
+
+
+
 
 /* menu.html */
 .pizzaMeny {
@@ -124,3 +207,29 @@ nav {
 .pizzaPrice {
 font-weight: bold;
 }
+
+  /* About.html */
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: auto;
+    row-gap: 5vh;
+  }
+  
+  .aboutH2 {
+    width: 100%;
+    color: var(--font-color);
+  }
+  
+  .aboutP {
+    width: 70%;
+    font-size: var(--p-size);
+    grid-row: 3;
+  }
+  
+  .aboutImg {
+    width: 70%;
+    grid-row: 2;
+  }

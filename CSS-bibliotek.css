@@ -9,8 +9,10 @@
   --default-margin: 1em;
   --default-border-radius: 15px;
   --default-box-shadow: 0 0 5px 1px var(--secondary-color);
-  --p-size: 20px;
-  --h1-size: 26px;
+  --p-size: 26px;
+  --p-size-mobile: 20px;
+  --h1-size: 40px;
+  --h1-size-mobile: 30px;
   --h2-size: 24px;
   --h3-size: 20px;
   --img-size: ;

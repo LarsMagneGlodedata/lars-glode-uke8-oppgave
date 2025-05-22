@@ -6,6 +6,15 @@ nav {
 
 }
 
+#logo {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--default-padding);
+  border-radius: var(--default-border-radius);
+  box-shadow: var(--default-box-shadow);
+}
+
 .navMenu {
   align-items: center;
 }
@@ -18,19 +27,6 @@ main {
   padding: var(--default-padding);
 }
 
-h1 {
-  font-weight: bold;
-  font-size: var(--h1-size);
-  width: 100%;
-  padding-top: var(--default-padding);
-  color: var(--font-color);
-}
-
-.heroP {
-  font-size: var(--p-size);
-  text-transform: capitalize;
-  color: var(--font-color);
-}
 
 span {
   font-size: var(--p-size);
@@ -47,4 +43,38 @@ span {
 
 footer {
   padding: var(--default-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5vh;
+  border-top: 1px solid var(--primary-color);
+  background-color: #eee;
+}
+
+h3 {
+  justify-content: center;
+}
+
+#footerNav {
+  justify-content: center;
+}
+
+#footerNotes {
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+}
+
+#footerNotes a {
+  text-decoration: none;
+  color: black;
+}
+
+#footerNotes a:hover {
+  text-decoration: underline;
+}
+
+#footerNotes a:visited {
+  color: gray;
 }
