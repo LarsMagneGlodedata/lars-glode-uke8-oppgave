@@ -96,8 +96,18 @@
   }
 
 
+  #up-arrow {
+    width: 5em;
+  }
+  
+  #bookmark {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+  }
+
   /* menu.html */
-  .pizzaMeny {
+  #pizzaMeny {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -157,21 +157,24 @@ h1 {
   flex-direction: column;
 }
 
+#up-arrow {
+  width: 3em;
+}
 
+#bookmark {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}s
 
 
 /* menu.html */
-.pizzaMeny {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 5vh;
-  height: auto;
+
+#pizzaMeny {
+  background-color: aqua;
 }
 
-.h1Meny {
+.h2Meny {
   width: fit-content;
 }
 
@@ -200,9 +203,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.pizzaDiscription {
-
-}
 
 .pizzaPrice {
 font-weight: bold;

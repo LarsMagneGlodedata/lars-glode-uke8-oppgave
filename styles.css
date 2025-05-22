@@ -25,6 +25,7 @@ nav {
 
 main {
   padding: var(--default-padding);
+  position: relative;
 }
 
 
@@ -77,4 +78,9 @@ h3 {
 
 #footerNotes a:visited {
   color: gray;
+}
+
+#pizzaMeny {
+  display: flex;
+  flex-direction: column;
 }
