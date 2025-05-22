@@ -150,6 +150,7 @@ h1 {
 #footerNav a {
   display: flex;
   justify-content: center;
+  width: 50%;
 }
 
 #footerNotes {
