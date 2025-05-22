@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
+
 nav {
   padding: var(--default-padding);
   gap: 0.5rem;
@@ -7,6 +11,8 @@ nav {
 }
 
 #logo {
+  font-family: "Merienda", cursive;
+  font-weight: bold;
   text-decoration: none;
   background-color: var(--primary-color);
   color: white;

@@ -97,12 +97,12 @@
 
 
   #up-arrow {
-    width: 5em;
+    width: 3em;
   }
   
   #bookmark {
     position: absolute;
-    right: 2em;
+    right: 1em;
     bottom: 2em;
   }
 

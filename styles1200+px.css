@@ -33,6 +33,8 @@ header {
 
 .navMenu a:hover {
   background-color: var(--secondary-color);
+  color: white;
+  border-radius: var(--default-border-radius);
 }
 
 .hero {
@@ -101,6 +103,10 @@ h1 {
 
 #heroA:hover #arrowImg {
   transform: translateX(-20px);
+}
+
+#heroA:hover {
+  background-color: var(--secondary-color);
 }
 
 

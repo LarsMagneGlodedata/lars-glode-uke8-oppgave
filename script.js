@@ -1,5 +1,6 @@
 // BURGER MENU
 document.addEventListener('DOMContentLoaded', () => {
+  window.onload = () => {
   let isNavOpen = false;
   const burger = document.querySelector('.burger');
   const navMenu = document.querySelector('.navMenu');
@@ -7,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.querySelector('.overlay');
   let mainHeight = document.querySelector('main').offsetHeight;
   let navAHeight = document.querySelector('.navMenu a').offsetHeight;
-
+  
 
   // function for å åpne nav
   function openNav() {
     navMenu.style.height = `${navAHeight * 5}px`;
-    overlay.style.height = `${mainHeight + navAHeight * 5}px`;
+    overlay.style.height = `${mainHeight}px`;
     burger.classList.toggle('change');
     isNavOpen = true;
   }
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     prevScrollpos = currentScrollPos;
   };
+}
 });
 
 // SKRIVEMASKIN
@@ -144,7 +146,7 @@ pizzaCardContainer.appendChild(pizzaCard.cloneNode(true))
 
 const pizzaCardContainer = document.querySelector('#pizzaCardContainer')
 
-for (let i = 1; i <= 8; i++) {
+for (let i = 1; i <= 9; i++) {
   const pizzaCard = document.createElement('div')
   pizzaCard.classList.add('pizzaCard')
 
@@ -171,3 +173,5 @@ for (let i = 1; i <= 8; i++) {
   pizzaCard.appendChild(pizzaPrice)
   pizzaCardContainer.appendChild(pizzaCard)
 }
+
+// TODO: Scale opp bilde on mouseover. lag Call-to-action knapp på logginn
