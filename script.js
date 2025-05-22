@@ -173,5 +173,3 @@ for (let i = 1; i <= 9; i++) {
   pizzaCard.appendChild(pizzaPrice)
   pizzaCardContainer.appendChild(pizzaCard)
 }
-
-// TODO: Scale opp bilde on mouseover. lag Call-to-action knapp på logginn
