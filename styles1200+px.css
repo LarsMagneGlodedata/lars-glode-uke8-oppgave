@@ -87,6 +87,7 @@ h1 {
   border-radius: var(--default-border-radius);
   overflow: hidden;
   position: relative;
+  text-transform: capitalize;
 }
 
 #heroI {
