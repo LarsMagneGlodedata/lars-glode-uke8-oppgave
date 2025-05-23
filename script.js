@@ -6,14 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.navMenu');
   const main = document.querySelector('main');
   const overlay = document.querySelector('.overlay');
-  let mainHeight = document.querySelector('main').offsetHeight;
-  let navAHeight = document.querySelector('.navMenu a').offsetHeight;
-  
+  const navHeight = navMenu.querySelectorAll('a');
+
+  let totalHeight = 0;
+  // Kalkulere totale høgden på alle a element inn i .navMenu
+  navHeight.forEach((link) => {
+    totalHeight += link.offsetHeight;
+  });
 
   // function for å åpne nav
   function openNav() {
-    navMenu.style.height = `${navAHeight * 5}px`;
-    overlay.style.height = `${mainHeight}px`;
+    navMenu.style.height = `${totalHeight}px`;
+    overlay.style.height = `${main.offsetHeight}px`;
     burger.classList.toggle('change');
     isNavOpen = true;
   }
@@ -128,27 +132,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 // menu.html
-
-/*
-const pizzaCard = document.createElement('div')
-const pizzaImg = document.createElement('img')
-pizzaImg.src = ""
-pizzaImg.alt = "Bilde av pizza"
-const pizzaName = document.createElement('h3')
-pizzaName.innerHTML = "Navn"
-const pizzaDiscription = document.createElement('p')
-pizzaDiscription.innerHTML = "Beskrivelse"
-const pizzaPrice = document.createElement('p')
-pizzaPrice.innerHTML = "pris"
-
-pizzaCard.appendChild(pizzaImg)
-pizzaCard.appendChild(pizzaName)
-pizzaCard.appendChild(pizzaDiscription)
-pizzaCard.appendChild(pizzaPrice)
-pizzaCardContainer.appendChild(pizzaCard)
-pizzaCardContainer.appendChild(pizzaCard.cloneNode(true))
-*/
-
+// pizzaCards
 document.addEventListener('DOMContentLoaded', () => {
   const path = window.location.pathname
 
