@@ -70,6 +70,13 @@ nav {
   align-items: center;
 }
 
+.navMenu a:hover,
+.navMenu a:active {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: var(--default-border-radius);
+}
+
 .nav1 p {
   color: var(--font-color);
 }
@@ -77,6 +84,22 @@ nav {
 main {
   padding: var(--default-padding);
   position: relative;
+}
+
+#heroA:hover #arrowImg {
+  transform: translateX(-20px);
+}
+
+#heroA:active #arrowImg {
+  transform: translate(-20px);
+}
+
+#heroA:hover {
+  background-color: var(--secondary-color);
+}
+
+#heroA:active {
+  background-color: var(--secondary-color);
 }
 
 

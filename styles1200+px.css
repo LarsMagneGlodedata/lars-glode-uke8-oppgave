@@ -31,11 +31,7 @@ header {
   justify-content: center;
 }
 
-.navMenu a:hover {
-  background-color: var(--secondary-color);
-  color: white;
-  border-radius: var(--default-border-radius);
-}
+
 
 .hero {
   display: grid;
@@ -101,13 +97,7 @@ h1 {
   transition: 0.5s;
 }
 
-#heroA:hover #arrowImg {
-  transform: translateX(-20px);
-}
 
-#heroA:hover {
-  background-color: var(--secondary-color);
-}
 
 
 #up-arrow {
